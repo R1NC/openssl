@@ -26,13 +26,8 @@
 cmake_minimum_required( VERSION 3.1.0 )
 set( CMAKE_LEGACY_CYGWIN_WIN32 0 )
 
-if(IOS)
-  option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
-  option(BUILD_STATIC_LIBS "Build static libraries" ON)
-else()
-  option(BUILD_SHARED_LIBS "Build shared libraries" ON)
-  option(BUILD_STATIC_LIBS "Build static libraries" OFF)
-endif()
+option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+option(BUILD_STATIC_LIBS "Build static libraries" ON)
 
 project( openssl )
 
